@@ -2,7 +2,7 @@
 
 FaceFinder is a powerful face recognition app that allows users to create albums and organize images into nested folders. With an intuitive UI and robust backend, FaceFinder helps users quickly find all instances of a specific face across their image library using AI.
 
-## 🔍 Key Features
+## 1. 🔍 Key Features
 
 - 📁 **Album and Folder Management**  
   Users can create albums and nested folders for flexible image organization.
@@ -17,7 +17,7 @@ FaceFinder is a powerful face recognition app that allows users to create albums
   /{username}/{album_name}/{folder_name}/{subfolder_name}/originals
   /{username}/{album_name}/{folder_name}/{subfolder_name}/thumbnails
 
-## 🛠️ Tech Stack
+## 2. 🛠️ Tech Stack
 
 - **Frontend**: React / Tailwind (optional)
 - **Backend**: Node.js / Express
@@ -27,29 +27,25 @@ FaceFinder is a powerful face recognition app that allows users to create albums
 - **Image Processing**: Sharp (for thumbnail creation and watermark addition)
 
 
-2. Install Dependencies
-📦 Frontend dependencies (in root)
-bash
-Copy
-Edit
+## 3. Install Dependencies
+📦 **Frontend dependencies (in root)**
+```bash
 npm install
-📦 Backend dependencies (in /backend)
-bash
-Copy
-Edit
+
+📦 **Backend dependencies (in /backend)**
+```bash
 cd backend
 npm install
 cd ..
-3. Set Up Environment Variables
+
+
+## 3. Set Up Environment Variables
 In root .env:
 env
-Copy
-Edit
 VITE_API_BASE_URL=http://localhost:5000
 In /backend/.env:
 env
-Copy
-Edit
+
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 UPLOADS_DIR=uploads
